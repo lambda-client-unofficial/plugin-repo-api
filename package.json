@@ -7,5 +7,10 @@
   "scripts": {
     "start": "node src/main.js"
   },
-  "license": "Unlicense"
+  "license": "Unlicense",
+  "name": "plugin-repo-api",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "repository": "https://github.com/lambda-client-unofficial/plugin-repo-api.git",
+  "author": "i-spin <me@i-sp.in>"
 }
