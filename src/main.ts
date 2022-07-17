@@ -5,11 +5,11 @@ import Plugins from './routes/Plugins.ts';
 import Download from './routes/Download.ts';
 
 const app = new Application();
-
+const port = parseInt(Deno.env.get("PORT") ?? "8080", 10);
 app
   .get('/', Home)
   .get('/plugins', Plugins)
   .get('/download/:name', Download)
-  .start({port: 8080})
+  .start({port: port})
 
-console.log('Listening on port 8080.');
+console.log(`Listening on port ${port}.`);
